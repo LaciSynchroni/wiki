@@ -6,7 +6,8 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 const config: Config = {
 	title: "Laci Synchroni",
-	tagline: "Dinosaurs are cool",
+	tagline:
+		"A decentralized mod and appearance sync server and plugin for FFXIV",
 	favicon: "img/favicon.ico",
 
 	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -75,17 +76,23 @@ const config: Config = {
 		// Replace with your project's social card
 		image: "img/docusaurus-social-card.jpg",
 		navbar: {
-			title: "My Site",
+			title: "Laci Synchroni",
 			logo: {
-				alt: "My Site Logo",
+				alt: "Laci Synchroni Logo",
 				src: "img/logo.svg",
 			},
 			items: [
 				{
 					type: "docSidebar",
-					sidebarId: "tutorialSidebar",
+					sidebarId: "selfHostingSidebar",
 					position: "left",
-					label: "Tutorial",
+					label: "Self-Hosting Guide",
+				},
+				{
+					type: "docSidebar",
+					sidebarId: "pluginSidebar",
+					position: "left",
+					label: "Plugin Guide",
 				},
 				{ to: "/blog", label: "Blog", position: "left" },
 				{
@@ -111,16 +118,8 @@ const config: Config = {
 					title: "Community",
 					items: [
 						{
-							label: "Stack Overflow",
-							href: "https://stackoverflow.com/questions/tagged/docusaurus",
-						},
-						{
 							label: "Discord",
-							href: "https://discordapp.com/invite/docusaurus",
-						},
-						{
-							label: "X",
-							href: "https://x.com/docusaurus",
+							href: "https://discordapp.com/invite/qQQSz3jZnK",
 						},
 					],
 				},
@@ -133,12 +132,12 @@ const config: Config = {
 						},
 						{
 							label: "GitHub",
-							href: "https://github.com/facebook/docusaurus",
+							href: "https://github.com/lacisynchroni/wiki",
 						},
 					],
 				},
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+			copyright: `Copyright © ${new Date().getFullYear()} Laci Synchroni. Built with Docusaurus.`,
 		},
 		prism: {
 			theme: prismThemes.github,
