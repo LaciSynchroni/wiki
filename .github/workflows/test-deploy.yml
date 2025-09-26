@@ -21,10 +21,5 @@ jobs:
 
       - name: Install dependencies
         run: bun ci
-      - name: Build website
-        run: bun run build
-
-      - name: Install dependencies
-        run: npm ci
       - name: Test build website
-        run: npm run build
+        run: bun run build
