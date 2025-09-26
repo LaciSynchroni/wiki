@@ -1,0 +1,8 @@
+{
+  "label": "Further Reading",
+  "position": 2,
+  "link": {
+    "type": "generated-index"
+  },
+  "description": "Advanced customization and configuration"
+}
