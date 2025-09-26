@@ -106,11 +106,20 @@ const config: Config = {
 			style: "dark",
 			links: [
 				{
-					title: "Docs",
+					title: "Self-Hosting Guide",
 					items: [
 						{
-							label: "Tutorial",
-							to: "/docs/intro",
+							label: "Self-Hosting Guide",
+							to: "/docs/hosting/intro",
+						},
+					],
+				},
+				{
+					title: "Plugin Guide",
+					items: [
+						{
+							label: "Plugin Guide",
+							to: "/docs/plugin/intro",
 						},
 					],
 				},

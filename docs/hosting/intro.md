@@ -21,7 +21,7 @@ If you are already familiar with hosting services, you can obviously skip this!
 While *technically optional*, you should set up the Discord bot so you can easily interact with the Laci service, as well
 as create your own account. 
 
-[Please head over to this article and set up your bot.]([bot-setup.md](tutorial-basics/02-bot-setup.md))
+[Please head over to this article and set up your bot.](tutorial-basics/02-bot-setup.md))
 
 You can run your bot on a private server if you are still testing, and later move it!
 
