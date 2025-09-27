@@ -7,7 +7,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 const config: Config = {
 	title: "Laci Synchroni",
 	tagline:
-		"A decentralized mod and appearance sync server and plugin for FFXIV",
+		"A decentralized mod and appearance sync server and plugin for Dalamud",
 	favicon: "img/favicon.ico",
 
 	// Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -120,6 +120,10 @@ const config: Config = {
 						{
 							label: "Plugin Guide",
 							to: "/docs/plugin/intro",
+						},
+						{
+							label: "Laci Synchroni Security",
+							to: "/docs/plugin/misc/plugin-security",
 						},
 					],
 				},
