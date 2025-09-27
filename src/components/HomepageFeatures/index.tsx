@@ -11,28 +11,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
 	{
-		title: "Easy to Use",
-		Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+		title: "Focused on Self-Hosting",
+		Svg: require("@site/static/img/undraw_server-down_lxs9.svg").default,
 		description: (
 			<>
-				Docusaurus was designed from the ground up to be easily installed and
-				used to get your website up and running quickly.
+				Laci Synchroni is focused on self-hosting. We don't want you to join one big server.
+				Instead, we want to empower you to host your own, for your friends, FC or community!
 			</>
 		),
 	},
 	{
-		title: "Focus on What Matters",
-		Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+		title: "Collaboration and Compatibility",
+		Svg: require("@site/static/img/undraw_remote-design-team_qfqr.svg").default,
 		description: (
 			<>
-				Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-				ahead and move your docs into the <code>docs</code> directory.
+				We are commited to maintaining compatibility with the v33 Mare API. All features
+				that are planned are not going to break that API, so that we can maintain compatibility
+				with as many services as possible!
 			</>
 		),
 	},
 	{
-		title: "Powered by React",
-		Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+		title: "Multi-Connect Client",
+		Svg: require("@site/static/img/undraw_server-status_7viz.svg").default,
 		description: (
 			<>
 				Extend or customize your website layout by reusing React. Docusaurus can

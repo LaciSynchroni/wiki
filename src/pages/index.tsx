@@ -20,13 +20,13 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/intro"
+						to="/docs/hosting/intro"
 					>
 						Self-Hosting Wiki
 					</Link>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/intro"
+						to="/docs/plugin/intro"
 					>
 						Plugin Wiki
 					</Link>

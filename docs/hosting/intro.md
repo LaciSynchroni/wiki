@@ -2,46 +2,55 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Self-Hosting Starter Guide
+:::info Discord Community Help
+If you experience issues or need help, you can always head over to our Discord and ask for help!
+:::
+:::warning Renaming
+Parts of this documentation is still referring to the old naming. Whenever something is using the ``Sinus`` prefix, that
+will change to ``Laci`` in the future!
+:::
 
-Let's discover **Docusaurus in less than 5 minutes**.
+This article serves as a guide through the self-hosting process. You can use this as an index page, and go back to each step if you need to re-read parts or have issues.
 
-## Getting Started
+## 1 - The Basics
+You should familiarize yourself with the [basics of running a server first](tutorial-basics/01-self-hosting-basics.md) first.
+If you are already familiar with hosting services, you can obviously skip this!
 
-Get started by **creating a new site**.
+## 2 - Bot Setup
+While *technically optional*, you should set up the Discord bot so you can easily interact with the Laci service, as well
+as create your own account. 
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+[Please head over to this article and set up your bot.](tutorial-basics/02-bot-setup.md))
 
-### What you'll need
+You can run your bot on a private server if you are still testing, and later move it!
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## 3 - Server Setup
+:::warning WIP
+Right now, our hosting solutions are Work in Progress. We have a Cloudflare setup that works, but requires some more effort. If you need other types
+of deployments, please reach out on Discord and we will try to get you started, under the premise that you are aware some changes will happen!
+:::
 
-## Generate a new site
+If you want to use the Cloudflare setup, please refer to the readme here: https://github.com/LaciSynchroni/server/blob/main/Docker/Readme.md
 
-Generate a new Docusaurus site using the **classic template**.
+Future hosting solutions will be provided in https://github.com/LaciSynchroni/hosting
 
-The classic template will automatically be added to your project after you run the command:
+## 4 - Registration
+:::info Secret Keys
+For testing purposes, we **highly recommend** sticking to secret keys! You can enable oAuth2 for your users after.
+:::
+### 4a - Using Self-Service
+If you enabled service-service by setting ``DiscordChannelForMessages``, you should now see the self-service message of your bot in that
+channel. **Pin this message.** Normally, the bot does this itself, but we added the bot without any permissions. 
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+You can register your account through that self-service.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### 4b - Using Admin Account
+If you don't want to use the self-service, you can head to [our guide to enable admin access](tutorial-basics/04-enabling-admin-access.md) to
+register yourself an admin account.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Once done, you can use the ``/useradd`` command in Discord to create new secret keys!
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+## 5 - Server Tester
+Once you have a secret key, [you can run our server testing tool](tutorial-basics/05-server-tester.md) to verify that your installation is functional. It will test core functionality. 
+Once it runs successfully, you can try to find a friend for actual testing!
