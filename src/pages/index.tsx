@@ -25,12 +25,12 @@ function HomepageHeader() {
 					>
 						Self-Hosting Wiki
 					</Link>
-					<Link
-						className="button button--secondary button--lg"
-						to="/docs/plugin/intro"
-					>
-						Plugin Wiki
-					</Link>
+					{/*<Link*/}
+					{/*	className="button button--secondary button--lg"*/}
+					{/*	to="/docs/plugin/intro"*/}
+					{/*>*/}
+					{/*	Plugin Wiki*/}
+					{/*</Link>*/}
 				</div>
 			</div>
 		</header>
