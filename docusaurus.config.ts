@@ -117,10 +117,10 @@ const config: Config = {
 				{
 					title: "Plugin Guide",
 					items: [
-						{
-							label: "Plugin Guide",
-							to: "/docs/plugin/intro",
-						},
+						// {
+						// 	label: "Plugin Guide",
+						// 	to: "/docs/plugin/intro",
+						// },
 						{
 							label: "Laci Synchroni Security",
 							to: "/docs/plugin/misc/plugin-security",
