@@ -10,19 +10,19 @@ In order to enable oAuth2 for your server, the discord integration you created t
 4. Copy the ``Client ID`` and note it somewhere safe
 5. Reset the ``Client Secret`` and note it somewhere safe.
 
-## Configuring your Sinus instance
+## Configuring your Laci instance
 
-Now swap to configure your Sinus instance.
+Now swap to configure your Laci instance.
 You can either use the ``.env`` file if you use the sample compose file (*recommended*) , or otherwise set the proprties in your ``config.json`` for the ``auth-service``
 
-1. ``SINUS_DISCORD_OAUTH_CLIENT_ID`` or ``SinusSynchronous.DiscordOAuthClientId``: Put your ``Client ID`` here
-2. ``SINUS_DISCORD_OAUTH_CLIENT_SECRET`` or ``SinusSynchronous.DiscordOAuthClientSecret``: Put your ``Client Secret`` here
-3. ``SINUS_PUBLIC_OAUTH_BASE_URI`` or ``SinusSynchronous.PublicOAuthBaseUri``: Set it to ``https://<your-domain>/oauth``
+1. ``LACI_DISCORD_OAUTH_CLIENT_ID`` or ``LaciSynchroni.DiscordOAuthClientId``: Put your ``Client ID`` here
+2. ``LACI_DISCORD_OAUTH_CLIENT_SECRET`` or ``LaciSynchroni.DiscordOAuthClientSecret``: Put your ``Client Secret`` here
+3. ``LACI_PUBLIC_OAUTH_BASE_URI`` or ``LaciSynchroni.PublicOAuthBaseUri``: Set it to ``https://<your-domain>/oauth``
 
 ## On JSON and Environment config
 The sample composefile comes with a few conveniently predefined environment variables. It's encouraged to use these, instead of changing anything manually. If you do run a different setup, you always have the following options to configure a property instead:
-1. Use the ``.json`` config file by putting the desired config key in directly, for example ``SinusSynchronous.DiscordOAuthClientId``
-2. Use environment variables, passed to the container, by replacing all ``.`` with ``__``, for example ``SinusSynchronous__DiscordOAuthClientId`
+1. Use the ``.json`` config file by putting the desired config key in directly, for example ``LaciSynchroni.DiscordOAuthClientId``
+2. Use environment variables, passed to the container, by replacing all ``.`` with ``__``, for example ``LaciSynchroni__DiscordOAuthClientId`
 
 ## Further Reading
 https://discord.com/developers/docs/topics/oauth2
