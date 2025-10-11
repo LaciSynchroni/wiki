@@ -1,7 +1,14 @@
 # 4 - Enabling Admin Access
 ## Fresh Install
-If you have a fresh instance, you can use this bash script to create a new admin account based on a discord ID. You can then use
-that admin account to /useradd yourself a Laci account with the bot!
+### Self-Service
+If you have the self-service set up properly, you can simply register an account by using the self-service.
+The self-service will give you admin permissions if no other user exists!
+
+### Manual admin mode
+If you can't or don't want to use the self-service, you can use this script to create an admin account. You can then /useradd
+to add users yourself.
+
+This can also be used to create a dedicated admin account.
 ```bash
 # Call ./create-admin-account.sh <discord-id> <admin-uid>
 # For example ./create-admin-account.sh 1235432342 nia_admin
