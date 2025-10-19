@@ -7,8 +7,9 @@ sidebar_position: 1
 If you experience issues or need help, you can always head over to our Discord and ask for help!
 :::
 :::warning Renaming
-Parts of this documentation is still referring to the old naming. Whenever something is using the ``Sinus`` prefix, that
-will change to ``Laci`` in the future!
+If you are still on an older version of Laci Synchroni, you need to replace the prefix ``LaciSynchroni`` with
+``SinusSynchronous`` whenever applicable.
+Please consider updating to a new version!
 :::
 
 This article serves as a guide through the self-hosting process. You can use this as an index page, and go back to each step if you need to re-read parts or have issues.

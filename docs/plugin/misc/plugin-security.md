@@ -72,7 +72,7 @@ your security, review changes they made in the last release. If you are unsure a
 ## What we do in regards to security
 - The Laci Synchroni plugin is built from source in public GitHub actions, with build attestation. At no point during the process, a manual compile and upload is done. While
 this is not 100% safe from being attacked, it provides a very strong security foundation
-- The Laci Synchroni organization on GitHub requires a review of every change by two people. That means if someone would sneak malicious code into the plugin,
-it's very likey to get caught by either of the two reviewers
+- The Laci Synchroni Plugin Repository on GitHub requires a review of every change by two people. That means if someone would sneak malicious code into the plugin,
+it's very likely to get caught by either of the two reviewers
 - Keeping you informed: We'll try to be as transparent and open as possible. If you have questions regarding security, you are more than welcome to reach out. We will
 answer all questions truthfully and to the best of our abilities

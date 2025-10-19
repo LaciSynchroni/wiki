@@ -8,7 +8,7 @@ The concurrency limiter allows you to limit how much global, concurrent operatio
 The concurrency limiter is configured to 50 by default. That means, 50 operations (like, for example, 'Pause Pair') can be executed at the same time.
 Other operations will be put into a queue that is Limit * 100 in size. That means, by default, 5000 operations can be queued at the same time.
 
-You can configure this behavior by setting the ``SinusSynchronous.HubExecutionConcurrencyFilter`` property.
+You can configure this behavior by setting the ``LaciSynchroni.HubExecutionConcurrencyFilter`` property.
 
 ## Limit Filter
 The limit filter can be used to limit traffic from one specific IP and utilizes the ASP.NET rate limiter feature: https://learn.microsoft.com/en-us/aspnet/core/performance/rate-limit?view=aspnetcore-9.0
