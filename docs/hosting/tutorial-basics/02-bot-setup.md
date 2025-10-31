@@ -43,7 +43,10 @@ This will add the bot to your server **without any special permissions, meaning 
 ## Configuring Laci-Services via compose-template
 Now everything is set up and you just need to configure the laci-services module to know your bot. If you use the default composefile, you will have to do the following
 - Set the ``LACI_DISCORD_TOKEN`` in ``.env`` to your bot token
-- Set the ``LaciSynchroni.DiscordChannelForMessages`` in ``services.appsettings.json`` to the ID of your self-service channel.
-- Set the ``LaciSynchroni.DiscordChannelForBotLog``  in ``services.appsettings.json`` to the ID of your logging channel
+- Set the ``LaciSynchroni.DiscordChannelForCommands`` in ``services.appsettings.json`` to the ID of your self-service channel
+- (Optional) Set the ``LaciSynchroni.DiscordChannelForBotLog``  in ``services.appsettings.json`` to the ID of your logging channel
+  - The logging channel contains certain events that happen with the discord bot
+- (Optional) Set the ``LaciSynchroni.DiscordChannelForMessages``  in ``services.appsettings.json`` to the ID of your messages channel
+  - The messages channel contains messages you broadcast with /message
 
 If your instance is running already, you will have to reboot it now. Otherwise, continue with the setup guide!
