@@ -28,10 +28,10 @@ Now you need a server to add the bot to. If this is the first time you are playi
 
 ## Preparing the server
 You want the following channels in your server:
-- A channel for self-service, for example ``#laci-self-service``. This channel will be used for the bot self service, like registration
+- A channel for self-service, for example ``#laci-self-service``. This channel will be used for the bot self-service, like registration
 - A channel for logging for your admins, for example ``#laci-logs``
 
-For both channels, right-click the channel name and copy the ID. Note the IDs down somewhere, we will need them.
+For both channels, right-click the channel name and copy the ID. **Note the IDs down somewhere, we will need them.**
 
 ## Adding the bot
 Open the following URL in your browser while changing the \<your-bot-id\> to your bot's *Application ID*. You can find the ID in the developer portal under *General Information*
@@ -39,14 +39,12 @@ Open the following URL in your browser while changing the \<your-bot-id\> to you
 https://discord.com/api/oauth2/authorize?client_id=<your-bot-id>&permissions=0&scope=bot%20applications.commands
 ````
 This will add the bot to your server **without any special permissions, meaning the bot can not manage users or add/remove roles from members!**
+This is to make sure the bot doesn't accidentally do something you don't want it to do. You can change this later if needed.
 
-## Configuring Laci-Services via compose-template
-Now everything is set up and you just need to configure the laci-services module to know your bot. If you use the default composefile, you will have to do the following
-- Set the ``LACI_DISCORD_TOKEN`` in ``.env`` to your bot token
-- Set the ``LaciSynchroni.DiscordChannelForCommands`` in ``services.appsettings.json`` to the ID of your self-service channel
-- (Optional) Set the ``LaciSynchroni.DiscordChannelForBotLog``  in ``services.appsettings.json`` to the ID of your logging channel
-  - The logging channel contains certain events that happen with the discord bot
-- (Optional) Set the ``LaciSynchroni.DiscordChannelForMessages``  in ``services.appsettings.json`` to the ID of your messages channel
-  - The messages channel contains messages you broadcast with /message
+## What's next
+Before proceeding, make sure that you have the following 3 things saved somewhere:
+1. Your bot token
+2. The ID of the self-service channel
+3. The ID of the logging channel
 
-If your instance is running already, you will have to reboot it now. Otherwise, continue with the setup guide!
+Once you have these 3, you can proceed to the next step.
