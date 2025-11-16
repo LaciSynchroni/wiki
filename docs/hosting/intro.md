@@ -27,14 +27,13 @@ as create your own account.
 You can run your bot on a private server if you are still testing, and later move it!
 
 ## 3 - Server Setup
-:::warning WIP
-Right now, our hosting solutions are Work in Progress. We have a Cloudflare setup that works, but requires some more effort. If you need other types
-of deployments, please reach out on Discord and we will try to get you started, under the premise that you are aware some changes will happen!
+:::warning Bot token required
+In order to properly start any setup, it's important you actually did step 2 and have your bot token ready and accessible!
 :::
 
-If you want to use the Cloudflare setup, please refer to the readme here: https://github.com/LaciSynchroni/server/blob/main/Docker/Readme.md
+Laci comes with a few possible deployment variants that are all equally supported, and should have equal complexity.
 
-Future hosting solutions will be provided in https://github.com/LaciSynchroni/hosting
+[Please head over to this article and install Laci.](tutorial-basics/03-installing-laci.md)
 
 ## 4 - Registration
 :::info Secret Keys
