@@ -161,6 +161,7 @@ The following only works if you have no changes. **If you get a merge prompt, yo
 ```bash
 # Update the repository
 git pull
+git pull --recurse-submodules
 ```
 
 ## Updating the composefile
