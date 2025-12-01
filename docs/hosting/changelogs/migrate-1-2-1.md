@@ -41,7 +41,7 @@ If one of these changes is already present in your deployment you can safely ski
 :::
 In preparation for the update you can already change your configuration files. **There are 3 major changes.**
 ### 1.1 - ForwardedHeaders
-In your ``base.appsettings.json`` you will have to add the [forwarded headers middleware config](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer?view=aspnetcore-10.0).
+In your ``base.appsettings.json``/``base.json`` (you should have one of the two) you will have to add the [forwarded headers middleware config](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer?view=aspnetcore-10.0).
 
 #### 1.1a - nginx/Caddy
 **If you run a nginx or Caddy setup**, merge this snippet into your configuration. ``ForwardedHeaders`` is a root key:
@@ -104,7 +104,7 @@ In your ``base.appsettings.json`` you will have to add the [forwarded headers mi
 
 ### 1.2 AllowedDiscordLogs
 
-Merge the following snippet into your ``services.appsettings.json`` under the ``LaciSynchroni`` root key. You can remove
+Merge the following snippet into your ``services.appsettings.json`` / ``services.json`` under the ``LaciSynchroni`` root key. You can remove
 logs as you want, those will affect how much your discord bot logs.
 
 ```json
