@@ -173,7 +173,7 @@ output:
 
 - nginx: ``git diff docker-compose.nginx.yaml docker-compose.yaml``
 - caddy: ``git diff docker-compose.caddy.yaml docker-compose.yaml``
-- server: ``git diff compose/standalone.example.yml compose/standalone.yaml``
+- server: ``git diff compose/standalone.example.yml compose/standalone.yml``
 
 If you have changes it's recommended you move each change elsewhere. Otherwise, you will have to manually migrate from now on. 
 
@@ -181,7 +181,7 @@ If you have no changes you can proceed with these commands:
 
 - nginx: ``cp docker-compose.nginx.yaml docker-compose.yaml``
 - caddy: ``cp docker-compose.caddy.yaml docker-compose.yaml``
-- server: ``cp compose/standalone.example.yml compose/standalone.yaml``
+- server: ``cp compose/standalone.example.yml compose/standalone.yml``
 
 ## Updating the deployment
 ### Hosting-Repository base
