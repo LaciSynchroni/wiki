@@ -155,6 +155,13 @@ PG_VERSION=17
 PG_VERSION=18
 ```
 
+### 1.5 Laci Version
+We now have the Laci docker image version as part at the ``.env``. If your deployment is from the ``hosting`` repository, please add
+the following snippet to your ``.env``
+```
+LACI_VERSION=1.2.1
+```
+
 ## Updating the repository
 The following only works if you have no changes. **If you get a merge prompt, you have local modifications!** Please move these local modifications elsewhere.
 
