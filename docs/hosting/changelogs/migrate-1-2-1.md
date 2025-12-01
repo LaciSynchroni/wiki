@@ -33,13 +33,13 @@ git diff-index --name-only HEAD
 
 If this results any files, run a ``git diff`` on these files. Move any changes you made in these files elsewhere, or migrate manually from now on.
 
-## 1. - Configurations
+## 1 - Configuration
 :::warning Existing Changes
 
 If one of these changes is already present in your deployment you can safely skip that step!
 
 :::
-In preparation for the update you can already change your configuration files. There are 3 major changes.**
+In preparation for the update you can already change your configuration files. **There are 3 major changes.**
 ### 1.1 - ForwardedHeaders
 In your ``base.appsettings.json`` you will have to add the [forwarded headers middleware config](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/proxy-load-balancer?view=aspnetcore-10.0).
 
