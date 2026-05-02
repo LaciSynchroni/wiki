@@ -3,6 +3,8 @@
 
 - **DNS Issue:** Check with ``nslookup <hostname>`` if all your domains are available. If this fails, verify your domains are registered. You will usually
 have to wait 5 to 10 minutes after registration
+- **Bot not working or no bot logs:** Make sure that your bot is invited to a single server only. Right now, the bot only supports being in a single server. If you need the bot in more than one server,
+you have to launch a second instance of ``services``
 
 ## Cloudflare
 If you use cloudflare and experience some sort of connectivity issue, please check the logs of your cloudflare tunnel for errors

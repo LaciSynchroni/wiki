@@ -53,7 +53,7 @@ In your ``base.appsettings.json``/``base.json`` (you should have one of the two)
     "KnownNetworks": [
       // IPv4 loopback
       "127.0.0.0/8",
-      // Caddy proxy (through docker network)
+      // proxy (through docker network)
       "172.17.0.0/16"
     ]
   }
